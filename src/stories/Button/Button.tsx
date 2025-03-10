@@ -5,7 +5,7 @@ import {     ButtonProps } from './Button.types'
 /** Styled button component */
 const StyledButton = styled.button<ButtonProps>`
   display: inline-block;
-  cursor: ${({ disabled }) => (disabled ? 'not-allowed' : 'pointer')};
+  cursor: ${({   disabled }) => (disabled ? 'not-allowed' : 'pointer')};
   border: 0;
   border-radius: ${({ rounded }) => (rounded ? '50px' : '5px')};
   font-weight: 700;
