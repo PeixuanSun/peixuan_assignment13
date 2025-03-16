@@ -1,13 +1,13 @@
 import React from 'react'
 import styled from 'styled-components'
-import { ButtonProps } from './Button.types'
+import {    ButtonProps } from './Button.types'
 
 /** Styled button component */
 const StyledButton = styled.button<ButtonProps>`
   display: inline-block;
   cursor: ${({ disabled }) => (disabled ? 'not-allowed' : 'pointer')};
   border: 0;
-  border-radius: ${({ rounded }) => (rounded ? '50px' : '5px')};
+  border-radius: ${({ prounded }) => (rounded ? '50px' : '5px')};
   font-weight: 700;
   line-height: 1;
   font-family: 'Arial', sans-serif;
