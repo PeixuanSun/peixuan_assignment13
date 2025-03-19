@@ -7,7 +7,7 @@ const StyledButton = styled.button<ButtonProps>`
   display: inline-block;
   cursor: ${({ disabled }) => (disabled ? 'not-allowed' : 'pointer')};
   border: 0;
-  border-radius: ${({ prounded }) => (rounded ? '50px' : '5px')};
+  border-radius: ${({ rounded }) => (rounded ? '50px' : '5px')};
   font-weight: 700;
   line-height: 1;
   font-family: 'Arial', sans-serif;
@@ -29,10 +29,9 @@ const StyledButton = styled.button<ButtonProps>`
     opacity: 0.5;
   }
 
-  /** ✅ 添加响应式适配 */
+  /** */
   @media (max-width: 768px) {
-    font-size: 14px; /* 在小屏幕上自动变小 */
-    padding: 8px 12px;
+    font-size: 14px; /* 
   }
 
   @media (max-width: 480px) {
